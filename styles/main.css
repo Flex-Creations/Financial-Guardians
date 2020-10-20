@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body .container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+body ul {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 100px;
+  position: fixed;
+}
+
+.header .logo-container {
+  height: 60px;
+}
+
+.header .logo-container img {
+  height: 100%;
+}
+
+.footer {
+  padding: 25px 5%;
+  text-align: center;
+  background: #c9bf2e;
+}
+
+.footer .copyright a {
+  color: #1a1a1a;
+}
+
+.footer .socials-container a {
+  text-decoration: none;
+}
+
+.footer .socials-container a img {
+  width: 50px;
+}
+/*# sourceMappingURL=main.css.map */
