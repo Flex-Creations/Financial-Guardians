@@ -11,7 +11,7 @@
           justify-content: flex-end;
 }
 
-.hero-section .header .logo-and-menu-container, .hero-section .header .logo-and-menu-container .logo-container, .hero-section .hero-content .cta-container {
+.hero-section .header .logo-and-menu-container, .hero-section .header .logo-and-menu-container .logo-container, .hero-section .hero-content .cta-container, .past_work-section .past_work-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,5 +451,33 @@ body a {
   color: #ffffff;
   background: #F68E1E;
   border: 2px solid #F68E1E;
+}
+
+.past_work-section .past_work-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.past_work-section .past_work-container .work {
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  -webkit-box-shadow: 0 0 10px rgba(26, 26, 26, 0.3);
+          box-shadow: 0 0 10px rgba(26, 26, 26, 0.3);
+}
+
+.past_work-section .past_work-container .work h3 {
+  margin-bottom: 10px;
+  color: #F68E1E;
+}
+
+.past_work-section .past_work-container .work p {
+  font-weight: 500;
 }
 /*# sourceMappingURL=index.css.map */
