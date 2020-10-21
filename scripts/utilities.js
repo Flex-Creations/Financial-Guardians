@@ -9,3 +9,11 @@ function toggleMenu() {
      menuIcon.classList.toggle('active');
      menuContainer.classList.toggle('active');
 }
+
+// var vid = document.getElementById("myVideo");
+
+// function slowPlaySpeed() { 
+//     vid.playbackRate = 0.5;
+// }
+
+// slowPlaySpeed();

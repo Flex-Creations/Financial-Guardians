@@ -11,7 +11,7 @@
           justify-content: flex-end;
 }
 
-.hero-section .header .logo-and-menu-container, .hero-section .header .logo-and-menu-container .logo-container {
+.hero-section .header .logo-and-menu-container, .hero-section .header .logo-and-menu-container .logo-container, .hero-section .hero-content .cta-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +116,6 @@ body a {
 .hero-section {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, #F68E1E, #EC2025);
 }
 
 .hero-section .header {
@@ -240,8 +239,6 @@ body a {
   position: fixed;
   padding: 0 50px;
   background: linear-gradient(135deg, #F68E1E, #EC2025);
-  -webkit-box-shadow: 0 4px 4px rgba(255, 255, 255, 0.3);
-          box-shadow: 0 4px 4px rgba(255, 255, 255, 0.3);
 }
 
 .hero-section .header .logo-and-menu-container .logo-container {
@@ -251,11 +248,6 @@ body a {
 
 .hero-section .header .logo-and-menu-container .logo-container img {
   height: 40px;
-}
-
-.hero-section .header .logo-and-menu-container .logo-container h1 {
-  font-size: 25px;
-  font-weight: 900;
 }
 
 .hero-section .header .logo-and-menu-container .menu-icon-container {
@@ -311,5 +303,153 @@ body a {
   right: 0;
   bottom: -5px;
   width: 20px;
+}
+
+.hero-section .hero-content {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(246, 142, 30, 0.5), rgba(236, 32, 37, 0.5));
+}
+
+.hero-section .hero-content .hero-video {
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+
+.hero-section .hero-content .cta-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .hero-section .hero-content .cta-container {
+    padding: 0 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.hero-section .hero-content .cta-container .hero-cta {
+  width: 90%;
+  height: 50vh;
+  max-width: 500px;
+  padding-top: 150px;
+  color: #ffffff;
+}
+
+@media (min-width: 800px) {
+  .hero-section .hero-content .cta-container .hero-cta {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-section .hero-content .cta-container .hero-cta {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.hero-section .hero-content .cta-container .hero-cta .cta {
+  width: 100%;
+  height: 320px;
+  max-width: 500px;
+}
+
+@media (min-width: 800px) {
+  .hero-section .hero-content .cta-container .hero-cta .cta {
+    padding-top: 0;
+  }
+}
+
+.hero-section .hero-content .cta-container .hero-cta .cta h1 {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .hero-section .hero-content .cta-container .hero-cta .cta h1 {
+    font-size: 50px;
+  }
+}
+
+.hero-section .hero-content .cta-container .form-container {
+  width: 90%;
+  height: 50vh;
+  max-width: 800px;
+  color: #F68E1E;
+}
+
+@media (min-width: 1200px) {
+  .hero-section .hero-content .cta-container .form-container {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.hero-section .hero-content .cta-container .form-container h2 {
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-content .cta-container .form-container .hero-form {
+  width: 100%;
+  height: 320px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 500px;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.hero-section .hero-content .cta-container .form-container .hero-form label {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.hero-section .hero-content .cta-container .form-container .hero-form label input {
+  width: 100%;
+  display: block;
+  padding: 5px;
+  border: 2px solid #F68E1E;
+}
+
+.hero-section .hero-content .cta-container .form-container .hero-form label input:focus {
+  outline: none;
+}
+
+.hero-section .hero-content .cta-container .form-container .hero-form .hero-submit-btn {
+  width: 100%;
+  padding: 5px;
+  margin: 20px auto;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background: #F68E1E;
+  border: 2px solid #F68E1E;
 }
 /*# sourceMappingURL=index.css.map */

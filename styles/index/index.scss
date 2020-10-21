@@ -3,7 +3,6 @@
 .hero-section {
      width: 100%;
      height: 100vh;
-     background: linear-gradient(135deg, $color-primary, $color-secondary);
 
      .header {
           width: 100%;
@@ -121,7 +120,6 @@
                padding: 0 50px;
                @extend %space-between;
                background: linear-gradient(135deg, $color-primary, $color-secondary);
-               box-shadow: 0 4px 4px rgba($color-white, .3);
      
                .logo-container {
                     width: 180px;
@@ -130,11 +128,6 @@
      
                     img {
                          height: 40px;
-                    }
-     
-                    h1 {
-                         font-size: 25px;
-                         font-weight: 900;
                     }
                }
      
@@ -190,6 +183,129 @@
                               right: 0;
                               bottom: -5px;
                               width: 20px;
+                         }
+                    }
+               }
+          }
+     }
+
+     .hero-content {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, rgba($color-primary, .5), rgba($color-secondary, .5));
+          
+          .hero-video {
+               right: 0;
+               bottom: 0;
+               z-index: -1;
+               min-width: 100%;
+               min-height: 100%;
+               position: absolute;
+          }
+          
+          .cta-container {
+               width: 100%;
+               height: 100%;
+               margin: 0 auto;
+               max-width: 1300px;
+               @extend %space-between;
+               flex-direction: column;
+
+               @media (min-width: 800px) {
+                    padding: 0 50px;
+                    flex-direction: row;
+               }
+               
+               .hero-cta { 
+                    width: 90%;
+                    height: 50vh;
+                    max-width: 500px;
+                    padding-top: 150px;
+                    color: $color-white;
+                    
+                    @media (min-width: 800px) {
+                         padding-top: 0;
+                    }
+
+                    @media (min-width: 1200px) {
+                         height: 100vh;
+                         display: flex;
+                         padding-top: 0 ;
+                         align-items: center;
+                    }
+
+                    .cta {
+                         width: 100%;
+                         height: 320px;
+                         max-width: 500px;
+
+                         @media (min-width: 800px) {
+                              padding-top: 0;
+                         }
+
+                         h1 {
+                              margin-bottom: 20px;
+
+                              @media (min-width: 600px) {
+                                   font-size: 50px
+                              }
+                         }
+                    }
+               
+               }
+               
+               .form-container {
+                    width: 90%;
+                    height: 50vh;
+                    max-width: 800px;
+                    color: $color-primary;
+
+                    
+                    @media (min-width: 1200px) {
+                         height: 100vh;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                    }
+
+                    h2 {
+                         margin-bottom: 20px;
+                    }
+
+                    .hero-form {
+                         width: 100%;
+                         height: 320px;
+                         padding: 10px;
+                         margin: 0 auto;
+                         max-width: 500px;
+                         border-radius: 5px;
+                         background: $color-white;
+
+                         label {
+                              width: 100%;
+                              margin-bottom: 55px;
+                              
+                              input {
+                                   width: 100%;
+                                   display: block;
+                                   padding: 5px;
+                                   border: 2px solid $color-primary;
+                              
+                                   &:focus {
+                                        outline: none;
+                                   }
+                              }
+                         }
+                         
+                         .hero-submit-btn {
+                              width: 100%;
+                              padding: 5px;
+                              margin: 20px auto;
+                              font-weight: 500;
+                              letter-spacing: 2px;
+                              color: $color-white;
+                              background: $color-primary;
+                              border: 2px solid $color-primary;
                          }
                     }
                }
