@@ -263,6 +263,94 @@ body {
      }
 }
 
+
+.about-section {
+     margin-top: 100px;
+
+     h2 {
+          font-size: 30px;
+          margin-bottom: 20px;
+          margin-left: 55px;
+          
+          .bar {
+               height: 7px;
+               width: 50px;
+               position: relative;
+               transform: translateX(-55px);
+               background: $color-primary;
+
+               &::before {
+                    bottom: -15px;
+                    left: 0;
+                    content: '';
+                    height: 7px;
+                    width: 50px;
+                    position: absolute;
+                    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+               }
+
+               &::after {
+                    left: 0;
+                    content: '';
+                    height: 7px;
+                    width: 50px;
+                    bottom: -30px;
+                    position: absolute;
+                    background: $color-secondary;
+               }
+          }
+     }
+
+     .about-container {
+          width: 100%;
+          margin: 0 auto;
+          max-width: 900px;
+          text-align: center;
+          flex-direction: column;
+          @extend %space-between;
+          
+          @media (min-width: 800px) {
+               text-align: left;
+               flex-direction: row;
+          }
+
+          .about-image {
+               width: 100%;
+               margin-bottom: 30px;
+               
+               @media (min-width: 800px) {
+                    width: 50%;
+                    margin-bottom: 0;
+
+                    img {
+                         max-width: 450px;
+                         width: 100%;
+                    }
+               }
+          }
+          
+          .about-description {
+               width: 100%;
+
+               @media (min-width: 800px) {
+                    width: 50%;
+                    padding: 10px;
+               }
+
+               p {
+                    font-size: 23px;
+                    margin: 0 auto;
+                    max-width: 450px;
+
+                    span {
+                         color: $color-primary;
+                         font-weight: 500;
+                    }
+               }
+          }
+     }
+}
+
 .footer {
      padding: 25px 5%;
      text-align: center;

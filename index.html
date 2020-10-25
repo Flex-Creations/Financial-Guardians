@@ -1,62 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <title>Financial Guardians | Home Page</title>
-     <link rel="stylesheet" href="styles\index\index.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-     <div class="hero-section" id="hero-section">
-          <header class="header">
-               <div class="mobile-nav">
-                    <div class="logo-and-menu-container">
-                         <div class="logo-container">
-                              <img src="images\logo_black.png" alt="Financial Guardians logo" class="logo-image">
-                         </div>
-                         <div class="menu-icon-container">
-                              <div class="menu-icon"></div>
-                         </div>
-                    </div>
-                    <div class="menu-container">
-                         <ul>
-                              <li><a href="index.html" class="active">Home</a></li>
-                              <li><a href="services.html">Our Services</a></li>
-                              <li><a href="about.html">About Us</a></li>
-                              <li><a href="#contact-section">Contact Us</a></li>
-                         </ul>
-                    </div>
-               </div>
-               <div class="desktop-nav">
-                    <div class="logo-and-menu-container">
-                         <div class="logo-container">
-                              <img src="images\logo_black.png" alt="Financial Guardians logo" class="logo-image">
+     <head>
+          <meta charset="UTF-8">
+          <title>Financial Guardians | Home Page</title>
+          <link rel="stylesheet" href="styles\index\index.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
+     <body>
+          <div class="hero-section" id="hero-section">
+               <header class="header">
+                    <div class="mobile-nav">
+                         <div class="logo-and-menu-container">
+                              <div class="logo-container">
+                                   <img src="images\logo_black.png" alt="Financial Guardians logo" class="logo-image">
+                              </div>
+                              <div class="menu-icon-container">
+                                   <div class="menu-icon"></div>
+                              </div>
                          </div>
                          <div class="menu-container">
                               <ul>
-                                   <li><a href="index.html" class="active">Home</a></li>
-                                   <li><a href="services.html">Our Services</a></li>
+                                   <li><a href="index.html#hero-section" class="active">Home</a></li>
+                                   <li><a href="#services-section">Our Services</a></li>
                                    <li><a href="about.html">About Us</a></li>
                                    <li><a href="#contact-section">Contact Us</a></li>
                               </ul>
                          </div>
                     </div>
-               </div>
-          </header>
-          <div class="hero-content">
-               <video autoplay muted loop class="hero-video">
-                    <source src="images\hero_video.mp4" type="video/mp4">
-               </video>
-               <div class="cta-container container">
-                    <div class="hero-cta">
-                         <div class="cta">
-                              <h1>ARE YOU DROWNING IN DEBT?</h1>
-                              <p>Come to us for debt management that is second to none..</p>
+                    <div class="desktop-nav">
+                         <div class="logo-and-menu-container">
+                              <div class="logo-container">
+                                   <img src="images\logo_black.png" alt="Financial Guardians logo" class="logo-image">
+                              </div>
+                              <div class="menu-container">
+                                   <ul>
+                                        <li><a href="index.html#hero-section" class="active">Home</a></li>
+                                        <li><a href="#services-section">Our Services</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="#contact-section">Contact Us</a></li>
+                                   </ul>
+                              </div>
                          </div>
                     </div>
-                    <div class="form-container">
-                         <form class="hero-form">
-                              <h2>Need A Consultation?</h2>
+               </header>
+               <div class="hero-content">
+                    <video autoplay muted loop class="hero-video">
+                         <source src="images\hero_video.mp4" type="video/mp4">
+                    </video>
+                    <div class="cta-container container">
+                         <div class="hero-cta">
+                              <div class="cta">
+                                   <h1>ARE YOU DROWNING IN DEBT?</h1>
+                                   <p>Come to us for debt management that is second to none..</p>
+                              </div>
+                         </div>
+                         <div class="form-container">
+                              <form class="hero-form">
+                                   <h2>Need A Consultation?</h2>
+                                   <div class="row">
+                                        <label for="firstname">
+                                             <span>First Name</span>
+                                             <input type="text" name="firstname">
+                                        </label>
+                                        <label for="lastname">
+                                             <span>Last Name</span>
+                                             <input type="text" name="lastname">
+                                        </label>
+                                   </div>
+                                   <div class="row">
+                                        <label for="phone-number">
+                                             <span>Phone Number</span>
+                                             <input type="text" name="phone-number">
+                                        </label>
+                                        <label for="id-number">
+                                             <span>ID Number</span>
+                                             <input type="text" name="id-number">
+                                        </label>
+                                   </div>
+                                   <button type="submit" class="hero-submit-btn">SUBMIT</button>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <section class="past_work-section">
+               <div class="container">
+                    <div class="past_work-container">
+                         <div class="work">
+                              <h3 class="work-number">18</h3>
+                              <p class="work-description">Years Of Experience</p>
+                         </div>
+                         <div class="work">
+                              <h3 class="work-number">9</h3>
+                              <p class="work-description">Dedicated Staff</p>
+                         </div>
+                         <div class="work">
+                              <h3 class="work-number">35</h3>
+                              <p class="work-description">Happy Clients</p>
+                         </div>
+                         <div class="work">
+                              <h3 class="work-number">33</h3>
+                              <p class="work-description">Successful Removals</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="services-section" id="services-section">
+               <div class="container">
+                    <div class="services-container">
+                         <div class="service">
+                              <img src="images\flag_icon.png" alt="flag icon">
+                              <h2>Debt review removal</h2>
+                              <p>
+                                   Our main area of expertise is the successful removal of the debt 
+                                   review flag which would enable credit worthyness. We have been 
+                                   around almost as long as the NCA has been and as such are aware 
+                                   of nearly every amendment or deletion when it comes to the act. 
+                                   We are also fighters for the ethical and  proceduraly correct 
+                                   implementation of the debt review flag.
+                              </p>
+                         </div>
+                         <div class="service">
+                              <img src="images\envelope_icon.png" alt="envelope icon">
+                              <h2>Lodging of disputes</h2>
+                              <p>
+                                   We assist consumers with lodging of disputes through which ever medium or against and/or to any however big however small. We take on the fight when the Consumer is considered the underdog we stand and fight for them. We believe that if you stand for nothing you fall for everything, for this reason we stand for JUSTICE!!
+                              </p>
+                         </div>
+                         <div class="service">
+                              <img src="images\trophy_icon.png" alt="trophy icon">
+                              <h2>Recission of magistrate orders</h2>
+                              <p>
+                                   We assist consumers with lodging of disputes through which ever medium or against and/or to any however big however small. We take on the fight when the Consumer is considered the underdog we stand and fight for them. We believe that if you stand for nothing you fall for everything, for this reason we stand for JUSTICE!!
+                              </p>
+                         </div>
+                         <div class="service">
+                              <img src="images\money_icon.png" alt="money icon">
+                              <h2>Loans with no upfront fees</h2>
+                              <p>
+                                   Our owner and found has recently been accepted as a Virtual agent for a Ncr registered Credit provider. Meaning we can now offer consumers a chance to apply for personal loans, Home improvement loans as well as consolidation loans. Unfortunately due to National State of Disaster only certain Employers qualify. Also do note as a registered Credit Provider clients whom are under Debt Review does not qualify. 
+                              </p>
+                         </div>
+                         <div class="service">
+                              <img src="images\skull_icon.png" alt="skull icon">
+                              <h2>#DEATH2SCAMMERS</h2>
+                              <p>
+                                   When we started in this industry we started and we will never stop. We challenge each and every consumer to stand up to the scammers and we promise you this. IF YOU WERE WRONGED AND NO ONE HAS YOUR BACK WE WILL. #cupiditate libertatis
+                              </p>
+                         </div>
+                         <div class="service">
+                              <img src="images\scale_icon.png" alt="scale icon">
+                              <h2>Restructing of your debts</h2>
+                              <p>
+                                   Although The Implementation of Debt review has been putrid the need there of still seems to be great. Majority of our people get paid today and tommorrow they are broke. So we offer clients a way to restructure there debts with out being deemed no longer credit worthy. 
+                              </p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="about-section" id="about-section">
+               <div class="container">
+                    <h2><div class="bar"></div> The Story Behind Financial Guardians</h2>
+                    <div class="about-container">
+                         <div class="about-image">
+                              <img src="images\founders_image.jpg" alt="founders of Financial Guardians">
+                         </div>
+                         <div class="about-description">
+                              <p><span>Kashief & Zaynoneesa Davids</span>, born in the  Cape Flats, neither was brought up from a state of privilege. However, their hearts minds and dreams were never going to be held back by their circumstances. Zaynoneesa is still new in the credit management sector but her background as a legal assistant is a huge benefit to <span>Financial Guardians</span> as will her humanitarian side. Kashief on the other hand is an industry veteran, having worked at multiple companies holding various positions up to that of Regional manager. His ability to make sales was never doubted but while at the big companies he would have to do as the romans do... that was until he was fired on the 26th March 2020.</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="contact-section" id="contact-section">
+               <div class="container">
+                    <div class="contact-container">
+                         <div class="details-container">
+                              <div class="row">
+                                   <a href="tel:+27607302136">
+                                        <img src="images/phone_icon.png" alt="phone icon">
+                                        <span>060 730 2136</span>
+                                   </a>
+                                   <a href="mailto:Kashief@Financialguardians.co.za">
+                                        <img src="images/email_icon.png" alt="email icon">
+                                        <span>Kashief@Financialguardians.co.za</span>
+                                   </a>
+                              </div>
+                              <div class="row">
+                                   <span>
+                                        <img src="images/location_icon.png" alt="location icon">
+                                        <span>61 Honolulu Street <br> Tafelsig <br> Cape Town <br> 7785</span>
+                                   </span>
+                                   <span href="mailto:Kashief@Financialguardians.co.za">
+                                        <img src="images/clock_icon.png" alt="clock icon">
+                                        <span>
+                                             Monday – Friday : 10.00 am – 9.00 pm <br>
+                                             Saturday: 10.00 am – 5.00 pm <br>
+                                             Sunday / Holiday: 10:00am-3:00pm
+                                        </span>
+                                   </span>
+                              </div>
+                         </div>
+                         <form class="contact-form">
                               <div class="row">
                                    <label for="firstname">
                                         <span>First Name</span>
@@ -66,209 +210,65 @@
                                         <span>Last Name</span>
                                         <input type="text" name="lastname">
                                    </label>
-                              </div>
-                              <div class="row">
                                    <label for="phone-number">
                                         <span>Phone Number</span>
                                         <input type="text" name="phone-number">
                                    </label>
-                                   <label for="id-number">
+                              </div>
+                              <div class="row">
+                                   <label for="iD-number">
                                         <span>ID Number</span>
-                                        <input type="text" name="id-number">
+                                        <input type="text" name="iD-number">
+                                   </label>
+                                   <label for="services-needed">
+                                        <span>Services needed</span>
+                                        <select name="services-needed">
+                                             <option value="option">option</option>
+                                             <option value="option">option</option>
+                                             <option value="option">option</option>
+                                             <option value="option">option</option>
+                                        </select>
+                                   </label>
+                                   <label for="review-duration">
+                                        <span>How Long was client Under debt review</span>
+                                        <input type="text" name="review-duration">
                                    </label>
                               </div>
-                              <button type="submit" class="hero-submit-btn">SUBMIT</button>
+                              <div class="row">
+                                   <label for="debt-collector">
+                                        <span>Who was debt counsellor?</span>
+                                        <input type="text" name="debt-collector">
+                                   </label>
+                                   <label for="firstname">
+                                        <span>First Name</span>
+                                        <input type="text" name="firstname">
+                                   </label>
+                                   <label for="income-before-payment">
+                                        <span>Income before Deductions</span>
+                                        <input type="text" name="income-before-payment">
+                                   </label>
+                              </div>
+                              <div class="row">
+                                   <label for="income-after-payment">
+                                        <span>Income after Deductions</span>
+                                        <input type="text" name="income-after-payment">
+                                   </label>
+                                   <label for="3-payments">
+                                        <span>DID client make more than 3 payments to DC</span>
+                                        <input type="text" name="3-payments">
+                                   </label>
+                              </div>
+                              <button type="submit" class="submit-btn">Submit</button>
                          </form>
                     </div>
                </div>
-          </div>
-     </div>
-     <section class="past_work-section">
-          <div class="container">
-               <div class="past_work-container">
-                    <div class="work">
-                         <h3 class="work-number">18</h3>
-                         <p class="work-description">Years Of Experience</p>
-                    </div>
-                    <div class="work">
-                         <h3 class="work-number">9</h3>
-                         <p class="work-description">Dedicated Staff</p>
-                    </div>
-                    <div class="work">
-                         <h3 class="work-number">35</h3>
-                         <p class="work-description">Happy Clients</p>
-                    </div>
-                    <div class="work">
-                         <h3 class="work-number">33</h3>
-                         <p class="work-description">Successful Removals</p>
-                    </div>
+          </section>
+          <footer class="footer">
+               <div class="copyright">
+               <p> Designed by <a href="https://www.flexcreations.com/" target="_blank" rel="noopener noreferrer">Flex Creations</a> Copyright © 2020.</p>
                </div>
-          </div>
-     </section>
-     <section class="services-section" id="services-section">
-          <div class="container">
-               <div class="services-container">
-                    <div class="service">
-                         <img src="images\flag_icon.png" alt="flag icon">
-                         <h2>Debt review removal</h2>
-                         <p>
-                              Our main area of expertise is the successful removal of the debt 
-                              review flag which would enable credit worthyness. We have been 
-                              around almost as long as the NCA has been and as such are aware 
-                              of nearly every amendment or deletion when it comes to the act. 
-                              We are also fighters for the ethical and  proceduraly correct 
-                              implementation of the debt review flag.
-                         </p>
-                    </div>
-                    <div class="service">
-                         <img src="images\envelope_icon.png" alt="envelope icon">
-                         <h2>Lodging of disputes</h2>
-                         <p>
-                              We assist consumers with lodging of disputes through which ever medium or against and/or to any however big however small. We take on the fight when the Consumer is considered the underdog we stand and fight for them. We believe that if you stand for nothing you fall for everything, for this reason we stand for JUSTICE!!
-                         </p>
-                    </div>
-                    <div class="service">
-                         <img src="images\trophy_icon.png" alt="trophy icon">
-                         <h2>Recission of magistrate orders</h2>
-                         <p>
-                              We assist consumers with lodging of disputes through which ever medium or against and/or to any however big however small. We take on the fight when the Consumer is considered the underdog we stand and fight for them. We believe that if you stand for nothing you fall for everything, for this reason we stand for JUSTICE!!
-                         </p>
-                    </div>
-                    <div class="service">
-                         <img src="images\money_icon.png" alt="money icon">
-                         <h2>Loans with no upfront fees</h2>
-                         <p>
-                              Our owner and found has recently been accepted as a Virtual agent for a Ncr registered Credit provider. Meaning we can now offer consumers a chance to apply for personal loans, Home improvement loans as well as consolidation loans. Unfortunately due to National State of Disaster only certain Employers qualify. Also do note as a registered Credit Provider clients whom are under Debt Review does not qualify. 
-                         </p>
-                    </div>
-                    <div class="service">
-                         <img src="images\skull_icon.png" alt="skull icon">
-                         <h2>#DEATH2SCAMMERS</h2>
-                         <p>
-                              When we started in this industry we started and we will never stop. We challenge each and every consumer to stand up to the scammers and we promise you this. IF YOU WERE WRONGED AND NO ONE HAS YOUR BACK WE WILL. #cupiditate libertatis
-                         </p>
-                    </div>
-                    <div class="service">
-                         <img src="images\scale_icon.png" alt="scale icon">
-                         <h2>Restructing of your debts</h2>
-                         <p>
-                              Although The Implementation of Debt review has been putrid the need there of still seems to be great. Majority of our people get paid today and tommorrow they are broke. So we offer clients a way to restructure there debts with out being deemed no longer credit worthy. 
-                         </p>
-                    </div>
-               </div>
-          </div>
-     </section>
-     <section class="about-section" id="about-section">
-          <div class="container">
-               <h2><div class="bar"></div> The Story Behind Financial Guardians</h2>
-               <div class="about-container">
-                    <div class="about-image">
-                         <img src="images\founders_image.jpg" alt="founders of Financial Guardians">
-                    </div>
-                    <div class="about-description">
-                         <p><span>Kashief & Zaynoneesa Davids</span>, born in the  Cape Flats, neither was brought up from a state of privilege. However, their hearts minds and dreams were never going to be held back by their circumstances. Zaynoneesa is still new in the credit management sector but her background as a legal assistant is a huge benefit to <span>Financial Guardians</span> as will her humanitarian side. Kashief on the other hand is an industry veteran, having worked at multiple companies holding various positions up to that of Regional manager. His ability to make sales was never doubted but while at the big companies he would have to do as the romans do... that was until he was fired on the 26th March 2020.</p>
-                    </div>
-               </div>
-          </div>
-     </section>
-     <section class="contact-section" id="contact-section">
-          <div class="container">
-               <div class="contact-container">
-                    <div class="details-container">
-                         <div class="row">
-                              <a href="tel:+27607302136">
-                                   <img src="images/phone_icon.png" alt="phone icon">
-                                   <span>060 730 2136</span>
-                              </a>
-                              <a href="mailto:Kashief@Financialguardians.co.za">
-                                   <img src="images/email_icon.png" alt="email icon">
-                                   <span>Kashief@Financialguardians.co.za</span>
-                              </a>
-                         </div>
-                         <div class="row">
-                              <span>
-                                   <img src="images/location_icon.png" alt="location icon">
-                                   <span>61 Honolulu Street <br> Tafelsig <br> Cape Town <br> 7785</span>
-                              </span>
-                              <span href="mailto:Kashief@Financialguardians.co.za">
-                                   <img src="images/clock_icon.png" alt="clock icon">
-                                   <span>
-                                        Monday – Friday : 10.00 am – 9.00 pm <br>
-                                        Saturday: 10.00 am – 5.00 pm <br>
-                                        Sunday / Holiday: 10:00am-3:00pm
-                                   </span>
-                              </span>
-                         </div>
-                    </div>
-                    <form class="contact-form">
-                         <div class="row">
-                              <label for="firstname">
-                                   <span>First Name</span>
-                                   <input type="text" name="firstname">
-                              </label>
-                              <label for="lastname">
-                                   <span>Last Name</span>
-                                   <input type="text" name="lastname">
-                              </label>
-                              <label for="phone-number">
-                                   <span>Phone Number</span>
-                                   <input type="text" name="phone-number">
-                              </label>
-                         </div>
-                         <div class="row">
-                              <label for="iD-number">
-                                   <span>ID Number</span>
-                                   <input type="text" name="iD-number">
-                              </label>
-                              <label for="services-needed">
-                                   <span>Services needed</span>
-                                   <select name="services-needed">
-                                        <option value="option">option</option>
-                                        <option value="option">option</option>
-                                        <option value="option">option</option>
-                                        <option value="option">option</option>
-                                   </select>
-                              </label>
-                              <label for="review-duration">
-                                   <span>How Long was client Under debt review</span>
-                                   <input type="text" name="review-duration">
-                              </label>
-                         </div>
-                         <div class="row">
-                              <label for="debt-collector">
-                                   <span>Who was debt counsellor?</span>
-                                   <input type="text" name="debt-collector">
-                              </label>
-                              <label for="firstname">
-                                   <span>First Name</span>
-                                   <input type="text" name="firstname">
-                              </label>
-                              <label for="income-before-payment">
-                                   <span>Income before Deductions</span>
-                                   <input type="text" name="income-before-payment">
-                              </label>
-                         </div>
-                         <div class="row">
-                              <label for="income-after-payment">
-                                   <span>Income after Deductions</span>
-                                   <input type="text" name="income-after-payment">
-                              </label>
-                              <label for="3-payments">
-                                   <span>DID client make more than 3 payments to DC</span>
-                                   <input type="text" name="3-payments">
-                              </label>
-                         </div>
-                         <button type="submit" class="submit-btn">Submit</button>
-                    </form>
-               </div>
-          </div>
-     </section>
-     <footer class="footer">
-          <div class="copyright">
-             <p> Designed by <a href="https://www.flexcreations.com/" target="_blank" rel="noopener noreferrer">Flex Creations</a> Copyright © 2020.</p>
-          </div>
-      </footer>
+          </footer>
 
-     <script src="scripts\utilities.js"></script>
-</body>
+          <script src="scripts\utilities.js"></script>
+     </body>
 </html>
