@@ -1,0 +1,77 @@
+@import "../main.scss";
+
+.services-section {
+     margin-top: 100px;
+     margin-bottom: 50px;
+
+     h2 {
+          font-size: 30px;
+          margin-bottom: 20px;
+          margin-left: 55px;
+          
+          .bar {
+               height: 7px;
+               width: 50px;
+               position: relative;
+               transform: translateX(-55px);
+               background: $color-primary;
+
+               &::before {
+                    bottom: -15px;
+                    left: 0;
+                    content: '';
+                    height: 7px;
+                    width: 50px;
+                    position: absolute;
+                    background: linear-gradient(to bottom, $color-primary, $color-secondary);
+               }
+
+               &::after {
+                    left: 0;
+                    content: '';
+                    height: 7px;
+                    width: 50px;
+                    bottom: -30px;
+                    position: absolute;
+                    background: $color-secondary;
+               }
+          }
+     }
+
+     .services-container {
+          flex-wrap: wrap;
+          animation-delay: .5s;
+          flex-direction: column;
+          @extend %space-between;
+          
+          @media (min-width: 600px) {
+               flex-direction: row;
+          }
+          
+          .service {
+               width: 100%;
+               padding: 10px;
+               height: 330px;
+               max-width: 450px;
+               border-radius: 5px;
+               margin-bottom: 20px;
+               @extend %transition;
+               background: $color-white;
+               box-shadow: 0 0 10px rgba($color-black, .13);
+
+               &:hover {
+                    transform: scale(1.01);
+               }
+
+               img {
+                    width: 65px;
+               }
+
+               h2 {
+                    margin: 20px 0 10px 0;
+                    font-weight: 500;
+                    text-transform: capitalize;
+               }
+          }
+     }
+}
