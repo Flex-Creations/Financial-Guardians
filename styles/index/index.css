@@ -153,18 +153,6 @@
           animation-name: fadeInRight;
 }
 
-.hero-section .hero-content .cta-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .header .logo-and-menu-container .menu-icon-container, .hero-section .header .logo-and-menu-container .menu-icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,7 +708,6 @@ body a {
 .hero-section .hero-content {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(246, 142, 30, 0.5), rgba(236, 32, 37, 0.5));
 }
 
 .hero-section .hero-content .hero-video {
@@ -737,7 +724,6 @@ body a {
   height: 100%;
   margin: 0 auto;
   max-width: 1300px;
-  text-align: center;
 }
 
 .hero-section .hero-content .cta-container .hero-cta {
