@@ -207,11 +207,14 @@ body a {
 
 .header {
   width: 100%;
+  background: #000;
+  height: 60px;
 }
 
 .header .mobile-nav {
+  z-index: 3;
   width: 100%;
-  background-color: #F68E1E;
+  position: fixed;
 }
 
 @media (min-width: 950px) {
@@ -272,10 +275,13 @@ body a {
 }
 
 .header .desktop-nav {
+  z-index: 3;
   width: 100%;
   height: 60px;
   display: none;
-  background-color: #F68E1E;
+  position: fixed;
+  -webkit-box-shadow: 0 0 10px rgba(26, 26, 26, 0.11);
+          box-shadow: 0 0 10px rgba(26, 26, 26, 0.11);
 }
 
 @media (min-width: 950px) {
@@ -305,7 +311,7 @@ body a {
 
 .header .desktop-nav .menu-container ul li a {
   font-weight: bold;
-  color: #ffffff;
+  color: #1a1a1a;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
@@ -320,12 +326,10 @@ body a {
 .header .logo-and-menu-container {
   top: 0;
   left: 0;
-  z-index: 3;
   width: 100%;
   height: 60px;
-  position: fixed;
   padding: 0 50px;
-  background: linear-gradient(135deg, #F68E1E, #EC2025);
+  background: #ffffff;
 }
 
 .header .logo-and-menu-container .logo-container {
@@ -366,7 +370,7 @@ body a {
   width: 15px;
   height: 3px;
   position: relative;
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -375,7 +379,7 @@ body a {
   content: '';
   height: 3px;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
