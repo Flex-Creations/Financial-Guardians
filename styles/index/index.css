@@ -728,6 +728,7 @@ body a {
   height: 100%;
   margin: 0 auto;
   max-width: 1300px;
+  padding-left: 50px;
 }
 
 .hero-section .hero-content .cta-container .hero-cta {
@@ -978,17 +979,145 @@ body a {
   font-weight: 500;
 }
 
-.contact-section {
+.comments-section {
   width: 100%;
   padding: 100px 0;
   margin-top: 100px;
   background: linear-gradient(135deg, #F68E1E, #EC2025);
 }
 
+.comments-section h2 {
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.comments-section .form-and-comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .comments-section .form-and-comments {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.comments-section .form-and-comments .comment-form {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+@media (min-width: 600px) {
+  .comments-section .form-and-comments .comment-form {
+    width: 50%;
+  }
+}
+
+.comments-section .form-and-comments .comment-form label {
+  width: 100%;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.comments-section .form-and-comments .comment-form label input, .comments-section .form-and-comments .comment-form label textarea {
+  width: 100%;
+  padding: 5px;
+  display: block;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.comments-section .form-and-comments .comment-form label input:focus, .comments-section .form-and-comments .comment-form label textarea:focus {
+  outline: none;
+}
+
+.comments-section .form-and-comments .comment-form .comment-btn {
+  width: 100%;
+  padding: 5px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #F68E1E;
+  border: 2px solid #F68E1E;
+}
+
+.comments-section .form-and-comments .comments-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 500px;
+  overflow-y: scroll;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 600px) {
+  .comments-section .form-and-comments .comments-container {
+    width: 50%;
+  }
+}
+
+.comments-section .form-and-comments .comments-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.comments-section .form-and-comments .comments-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+          box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+.comments-section .form-and-comments .comments-container::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  outline: 1px solid #ffffff;
+}
+
+.comments-section .form-and-comments .comments-container .comment {
+  padding: 10px 0;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.comments-section .form-and-comments .comments-container .comment h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.comments-section .form-and-comments .comments-container .comment p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.contact-section {
+  width: 100%;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
 .contact-section .contact-container .details-container {
   padding: 50px 20px;
   border-radius: 5px;
   background: #ffffff;
+  -webkit-box-shadow: 0 0 10px rgba(26, 26, 26, 0.13);
+          box-shadow: 0 0 10px rgba(26, 26, 26, 0.13);
 }
 
 .contact-section .contact-container .details-container .row {
@@ -1053,8 +1182,8 @@ body a {
 
 .contact-section .contact-container .contact-form .row label {
   width: 100%;
-  color: #ffffff;
   margin-bottom: 20px;
+  color: #F68E1E;
 }
 
 @media (min-width: 800px) {
@@ -1069,10 +1198,11 @@ body a {
 
 .contact-section .contact-container .contact-form .row label input, .contact-section .contact-container .contact-form .row label select {
   width: 100%;
+  color: #F68E1E;
   padding: 5px;
-  border: none;
   display: block;
   border-radius: 3px;
+  border: 2px solid #F68E1E;
 }
 
 @media (min-width: 800px) {
@@ -1091,6 +1221,7 @@ body a {
   font-weight: 500;
   letter-spacing: 2px;
   color: #ffffff;
+  text-transform: uppercase;
   background: #F68E1E;
   border: 2px solid #F68E1E;
 }

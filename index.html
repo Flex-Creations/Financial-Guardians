@@ -61,32 +61,6 @@
                                    </a>
                               </div>
                          </div>
-                         <!-- <div class="form-container animate fadeInRight">
-                              <form class="hero-form">
-                                   <h2>Need A Consultation?</h2>
-                                   <div class="row">
-                                        <label for="firstname">
-                                             <span>First Name</span>
-                                             <input type="text" name="firstname">
-                                        </label>
-                                        <label for="lastname">
-                                             <span>Last Name</span>
-                                             <input type="text" name="lastname">
-                                        </label>
-                                   </div>
-                                   <div class="row">
-                                        <label for="phone-number">
-                                             <span>Phone Number</span>
-                                             <input type="text" name="phone-number">
-                                        </label>
-                                        <label for="id-number">
-                                             <span>ID Number</span>
-                                             <input type="text" name="id-number">
-                                        </label>
-                                   </div>
-                                   <button type="submit" class="hero-submit-btn">SUBMIT</button>
-                              </form>
-                         </div> -->
                     </div>
                </div>
           </div>
@@ -167,6 +141,68 @@
                     </div>
                </div>
           </section>
+          <section class="comments-section">
+               <div class="container">
+                    <h2>Comment on our services...How was your experiences?</h2>
+                    <div class="form-and-comments">
+                         <form class="comment-form">
+                              <label for="name">
+                                   <span>Full Name</span>
+                                   <input type="text" name="name" class="name">
+                              </label>
+                              <label for="email">
+                                   <span>Email Address</span>
+                                   <input type="email" name="email" class="email">
+                              </label>
+                              <label for="email">
+                                   <span>Email Address</span>
+                                   <input type="email" name="email" class="email">
+                              </label>
+                              <label for="email">
+                                   <span>Email Address</span>
+                                   <input type="email" name="email" class="email">
+                              </label>
+                              <label for="comment">
+                                   <span>Comment</span>
+                                   <textarea name="comment" class="comment"></textarea>
+                              </label>
+                              <button type="submit" class="comment-btn">Submit</button>
+                         </form>
+                         <div class="comments-container">
+                              <div class="comment">
+                                   <h3 class="comment-name">Luyanda Dingindlela</h3>
+                                   <h3 class="comment-email">LuyandaDingindlela@gmail.com</h3>
+                                   <p>This is a comment. Look at my comment, it's better than all your comments.</p>
+                              </div>
+                              <div class="comment">
+                                   <h3 class="comment-name">Luyanda Dingindlela</h3>
+                                   <h3 class="comment-email">LuyandaDingindlela@gmail.com</h3>
+                                   <p>This is a comment. Look at my comment, it's better than all your comments.</p>
+                              </div>
+                              <div class="comment">
+                                   <h3 class="comment-name">Luyanda Dingindlela</h3>
+                                   <h3 class="comment-email">LuyandaDingindlela@gmail.com</h3>
+                                   <p>This is a comment. Look at my comment, it's better than all your comments.</p>
+                              </div>
+                              <div class="comment">
+                                   <h3 class="comment-name">Luyanda Dingindlela</h3>
+                                   <h3 class="comment-email">LuyandaDingindlela@gmail.com</h3>
+                                   <p>This is a comment. Look at my comment, it's better than all your comments.</p>
+                              </div>
+                              <div class="comment">
+                                   <h3 class="comment-name">Luyanda Dingindlela</h3>
+                                   <h3 class="comment-email">LuyandaDingindlela@gmail.com</h3>
+                                   <p>This is a comment. Look at my comment, it's better than all your comments.</p>
+                              </div>
+                              <div class="comment">
+                                   <h3 class="comment-name">Luyanda Dingindlela</h3>
+                                   <h3 class="comment-email">LuyandaDingindlela@gmail.com</h3>
+                                   <p>This is a comment. Look at my comment, it's better than all your comments.</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
           <section class="contact-section" id="contact-section">
                <div class="container">
                     <div class="contact-container">
@@ -198,53 +234,43 @@
                          </div>
                          <form class="contact-form">
                               <div class="row">
-                                   <label for="firstname">
-                                        <span>First Name</span>
-                                        <input type="text" name="firstname">
-                                   </label>
-                                   <label for="lastname">
-                                        <span>Last Name</span>
-                                        <input type="text" name="lastname">
+                                   <label for="fullname">
+                                        <span>Full Name</span>
+                                        <input type="text" name="fullname">
                                    </label>
                                    <label for="phone-number">
                                         <span>Phone Number</span>
                                         <input type="text" name="phone-number">
                                    </label>
+                                   <label for="id-number">
+                                        <span>ID Number</span>
+                                        <input type="text" name="id-number">
+                                   </label>
                               </div>
                               <div class="row">
-                                   <label for="iD-number">
-                                        <span>ID Number</span>
-                                        <input type="text" name="iD-number">
-                                   </label>
                                    <label for="services-needed">
                                         <span>Services needed</span>
-                                        <select name="services-needed">
-                                             <option value="option">option</option>
-                                             <option value="option">option</option>
-                                             <option value="option">option</option>
-                                             <option value="option">option</option>
+                                        <select name="services-needed" class="services-needed">
+                                             <option value="Drr">Drr</option>
+                                             <option value="mediation">mediation</option>
+                                             <option value="loan">loan</option>
+                                             <option value="dispute">dispute</option><option value="I dont know yet" selected="">I dont know yet</option>
                                         </select>
                                    </label>
                                    <label for="review-duration">
                                         <span>How Long was client Under debt review</span>
                                         <input type="text" name="review-duration">
                                    </label>
-                              </div>
-                              <div class="row">
                                    <label for="debt-collector">
                                         <span>Who was debt counsellor?</span>
                                         <input type="text" name="debt-collector">
                                    </label>
-                                   <label for="firstname">
-                                        <span>First Name</span>
-                                        <input type="text" name="firstname">
-                                   </label>
+                              </div>
+                              <div class="row">
                                    <label for="income-before-payment">
                                         <span>Income before Deductions</span>
                                         <input type="text" name="income-before-payment">
                                    </label>
-                              </div>
-                              <div class="row">
                                    <label for="income-after-payment">
                                         <span>Income after Deductions</span>
                                         <input type="text" name="income-after-payment">
@@ -254,6 +280,7 @@
                                         <input type="text" name="3-payments">
                                    </label>
                               </div>
+                              <div class="custom-inputs"></div>
                               <button type="submit" class="submit-btn">Submit</button>
                          </form>
                     </div>

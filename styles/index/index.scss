@@ -208,6 +208,7 @@
                height: 100%;
                margin: 0 auto;
                max-width: 1300px;
+               padding-left: 50px;
                
                .hero-cta { 
                     width: 90%;
@@ -223,7 +224,7 @@
                     @media (min-width: 1200px) {
                          height: 100vh;
                          display: flex;
-                         padding-top: 0 ;
+                         padding-top: 0;
                          align-items: center;
                     }
 
@@ -337,7 +338,6 @@
      }
 }
 
-
 .about-section {
      margin-top: 100px;
 
@@ -427,17 +427,128 @@
      }
 }
 
+.comments-section {
+     width: 100%;
+     padding: 100px 0;
+     margin-top: 100px;
+     background: linear-gradient(135deg, $color-primary, $color-secondary);   
+
+     h2 {
+          color: $color-white;
+          margin-bottom: 50px;
+     }
+
+     .form-and-comments {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          
+          @media (min-width: 600px) {
+               flex-direction: row;
+          }
+
+          .comment-form {
+               width: 100%;
+               height: 400px;
+               margin: 0 auto;
+               max-width: 500px;
+               
+               
+               @media (min-width: 600px) {
+                    width: 50%;
+               }
+
+               label {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    color: $color-white;
+          
+                    input, textarea {
+                         width: 100%;
+                         padding: 5px;
+                         display: block;
+                         border-radius: 3px;
+                         margin-bottom: 20px;
+                         color: $color-white;
+                         border: 2px solid $color-white;
+     
+                         &:focus {
+                              outline: none;
+                         }
+                    }
+               }
+
+               .comment-btn {
+                    width: 100%;
+                    padding: 5px;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    color: $color-white;
+                    text-transform: uppercase;
+                    background: $color-primary;
+                    border: 2px solid $color-primary;
+               }
+          }
+
+          .comments-container {
+               width: 100%;
+               height: 400px;
+               margin: 0 auto;
+               max-width: 500px;
+               overflow-y: scroll;
+               margin-bottom: 50px;
+
+
+               @media (min-width: 600px) {
+                    width: 50%;
+               }
+
+               &::-webkit-scrollbar {
+                    width: 10px;
+               }
+               
+               &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 6px rgba($color-white, 0.3);
+               }
+               
+               &::-webkit-scrollbar-thumb {
+                    background-color: $color-white;
+                    outline: 1px solid $color-white;
+               }
+
+               .comment {
+                    padding: 10px 0;
+                    color: $color-white;
+                    margin-bottom: 20px;
+                    border-bottom: 2px solid rgba($color-white, .2);
+
+                    h3 {
+                         font-size: 20px;
+                         font-weight: 400;
+                    }
+                    
+                    p {
+                         font-size: 15px;
+                         margin-top: 10px;
+                    }
+               }
+          }
+     }
+}
+
 .contact-section {
      width: 100%;
      padding: 100px 0;
-      margin-top: 100px;
-     background: linear-gradient(135deg, $color-primary, $color-secondary);
+     margin-top: 100px;
+     // background: linear-gradient(135deg, $color-primary, $color-secondary);
 
      .contact-container {
           .details-container {
                padding: 50px 20px;
                border-radius: 5px;
                background: $color-white;
+               box-shadow: 0 0 10px rgba($color-black, .13);
 
                .row {
                     width: 100%;
@@ -484,8 +595,8 @@
 
                     label {
                          width: 100%;
-                         color: $color-white;
                          margin-bottom: 20px;
+                         color: $color-primary;
 
                          @media (min-width: 800px) {
                               max-width: 330px;
@@ -499,10 +610,11 @@
 
                          input, select {
                               width: 100%;
+                              color: $color-primary;
                               padding: 5px;
-                              border: none;
                               display: block;
                               border-radius: 3px;
+                              border: 2px solid $color-primary;
 
 
                               @media (min-width: 800px) {
@@ -522,6 +634,7 @@
                     font-weight: 500;
                     letter-spacing: 2px;
                     color: $color-white;
+                    text-transform: uppercase;
                     background: $color-primary;
                     border: 2px solid $color-primary;
                }
