@@ -75,7 +75,11 @@
           }
      }
 
+
      .downloadable-container {
+          flex-wrap: wrap;
+          @extend %space-between;
+
           button {
                border: none;
                margin-top: 20px;

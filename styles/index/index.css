@@ -177,7 +177,7 @@
           justify-content: flex-start;
 }
 
-.header .logo-and-menu-container, .header .logo-and-menu-container .logo-container, .hero-section .header .logo-and-menu-container, .hero-section .header .logo-and-menu-container .logo-container, .past_work-section .past_work-container, .services-section .services-container, .about-section .about-container {
+.header .logo-and-menu-container, .header .logo-and-menu-container .logo-container, .hero-section .header .logo-and-menu-container, .hero-section .header .logo-and-menu-container .logo-container, .past_work-section .past_work-container, .services-section .services-container, .services-section .downloadable-container, .about-section .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,6 +876,11 @@ body a {
   text-transform: capitalize;
 }
 
+.services-section .downloadable-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .services-section .downloadable-container button {
   border: none;
   margin-top: 20px;
@@ -1122,6 +1127,7 @@ body a {
   width: 100%;
   padding: 100px 0;
   margin-top: 100px;
+  background: linear-gradient(135deg, #F68E1E, #EC2025);
 }
 
 .contact-section .contact-container .details-container {
@@ -1198,7 +1204,7 @@ body a {
 .contact-section .contact-container .contact-form .row label {
   width: 100%;
   margin-bottom: 20px;
-  color: #F68E1E;
+  color: #ffffff;
 }
 
 @media (min-width: 800px) {
@@ -1217,7 +1223,7 @@ body a {
   padding: 5px;
   display: block;
   border-radius: 3px;
-  border: 2px solid #F68E1E;
+  border: 2px solid #ffffff;
 }
 
 @media (min-width: 800px) {

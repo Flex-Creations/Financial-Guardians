@@ -177,7 +177,7 @@
           justify-content: flex-start;
 }
 
-.header .logo-and-menu-container, .header .logo-and-menu-container .logo-container, .services-section .services-container {
+.header .logo-and-menu-container, .header .logo-and-menu-container .logo-container, .services-section .services-container, .services-section .downloadable-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,6 +509,11 @@ body a {
   margin: 20px 0 10px 0;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.services-section .downloadable-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .services-section .downloadable-container button {
