@@ -74,6 +74,20 @@
                }
           }
      }
+
+     .downloadable-container {
+          button {
+               border: none;
+               margin-top: 20px;
+               padding: 10px 15px;
+               border-radius: 5px;
+               background: $color-primary;
+               
+               a {
+                    color: $color-white;
+               }
+          }
+     }
 }
 
 .contact-section {

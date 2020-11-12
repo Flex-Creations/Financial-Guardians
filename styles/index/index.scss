@@ -336,6 +336,20 @@
                }
           }
      }
+
+     .downloadable-container {
+          button {
+               border: none;
+               margin-top: 20px;
+               padding: 10px 15px;
+               border-radius: 5px;
+               background: $color-primary;
+               
+               a {
+                    color: $color-white;
+               }
+          }
+     }
 }
 
 .about-section {
@@ -592,6 +606,7 @@
                .row {
                     flex-wrap: wrap;
                     @extend %flex-start;
+                    align-items: flex-end;
 
                     label {
                          width: 100%;
