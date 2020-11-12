@@ -511,13 +511,6 @@ body a {
   text-transform: capitalize;
 }
 
-.services-section .downloadable-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .services-section .downloadable-container button {
   border: none;
   margin-top: 20px;
@@ -601,12 +594,15 @@ body a {
 .contact-section .contact-container .contact-form .row {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .contact-section .contact-container .contact-form .row label {
   width: 100%;
-  color: #ffffff;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 @media (min-width: 800px) {
@@ -621,10 +617,11 @@ body a {
 
 .contact-section .contact-container .contact-form .row label input, .contact-section .contact-container .contact-form .row label select {
   width: 100%;
+  color: #F68E1E;
   padding: 5px;
-  border: none;
   display: block;
   border-radius: 3px;
+  border: 2px solid #ffffff;
 }
 
 @media (min-width: 800px) {
@@ -643,6 +640,7 @@ body a {
   font-weight: 500;
   letter-spacing: 2px;
   color: #ffffff;
+  text-transform: uppercase;
   background: #F68E1E;
   border: 2px solid #F68E1E;
 }

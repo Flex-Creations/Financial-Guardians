@@ -629,13 +629,15 @@ body a {
 .contact-section .contact-container .contact-form .row {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .contact-section .contact-container .contact-form .row label {
   width: 100%;
   margin-bottom: 20px;
   color: #F68E1E;
-  text-transform: capitalize;
 }
 
 @media (min-width: 800px) {
@@ -650,10 +652,10 @@ body a {
 
 .contact-section .contact-container .contact-form .row label input, .contact-section .contact-container .contact-form .row label select {
   width: 100%;
+  color: #F68E1E;
   padding: 5px;
   display: block;
   border-radius: 3px;
-  color: #F68E1E;
   border: 2px solid #F68E1E;
 }
 
@@ -667,16 +669,13 @@ body a {
   outline: none;
 }
 
-.contact-section .contact-container .contact-form .row label input option, .contact-section .contact-container .contact-form .row label select option {
-  color: #F68E1E;
-}
-
 .contact-section .contact-container .contact-form .submit-btn {
   width: 100%;
   padding: 5px;
   font-weight: 500;
   letter-spacing: 2px;
   color: #ffffff;
+  text-transform: uppercase;
   background: #F68E1E;
   border: 2px solid #F68E1E;
 }

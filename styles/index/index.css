@@ -876,13 +876,6 @@ body a {
   text-transform: capitalize;
 }
 
-.services-section .downloadable-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .services-section .downloadable-container button {
   border: none;
   margin-top: 20px;
@@ -1197,6 +1190,9 @@ body a {
 .contact-section .contact-container .contact-form .row {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .contact-section .contact-container .contact-form .row label {

@@ -145,54 +145,35 @@
                                    <span>Last Name</span>
                                    <input type="text" name="lastname">
                               </label>
-                              <label for="phone-number">
-                                   <span>Phone Number</span>
-                                   <input type="text" name="phone-number">
+                              <label for="contact-number">
+                                   <span>Contact Number</span>
+                                   <input type="text" name="contact-number">
                               </label>
                          </div>
                          <div class="row">
-                              <label for="iD-number">
+                              <label for="id-number">
                                    <span>ID Number</span>
-                                   <input type="text" name="iD-number">
+                                   <input type="text" name="id-number">
+                              </label>
+                              <label for="email">
+                                   <span>Email Address</span>
+                                   <input type="email" name="email">
                               </label>
                               <label for="services-needed">
-                                   <span>Services needed</span>
-                                   <select name="services-needed">
-                                        <option value="option">option</option>
-                                        <option value="option">option</option>
-                                        <option value="option">option</option>
-                                        <option value="option">option</option>
+                                   <span>How can we help you today?</span>
+                                   <select name="services-needed" class="services-needed">
+                                        <option value="loan">Please select</option>
+                                        <option value="loan">Need a loan</option>
+                                        <option value="debt restructing">Need help restructing your debt</option>
+                                        <option value="get off debt review / administration">Want to get off debt review / administration</option>
+                                        <option value="credit report">Is there something on your credit report that you think is not right?</option>
+                                        <option value="scammed">Were you scammed?</option>
+                                        <option value="looking for a job">Looking for a job?</option>
+                                        <option value="other">Other</option>
                                    </select>
                               </label>
-                              <label for="review-duration">
-                                   <span>How Long was client Under debt review</span>
-                                   <input type="text" name="review-duration">
-                              </label>
                          </div>
-                         <div class="row">
-                              <label for="debt-collector">
-                                   <span>Who was debt counsellor?</span>
-                                   <input type="text" name="debt-collector">
-                              </label>
-                              <label for="firstname">
-                                   <span>First Name</span>
-                                   <input type="text" name="firstname">
-                              </label>
-                              <label for="income-before-payment">
-                                   <span>Income before Deductions</span>
-                                   <input type="text" name="income-before-payment">
-                              </label>
-                         </div>
-                         <div class="row">
-                              <label for="income-after-payment">
-                                   <span>Income after Deductions</span>
-                                   <input type="text" name="income-after-payment">
-                              </label>
-                              <label for="3-payments">
-                                   <span>DID client make more than 3 payments to DC</span>
-                                   <input type="text" name="3-payments">
-                              </label>
-                         </div>
+                         <div class="custom-inputs"></div>
                          <button type="submit" class="submit-btn">Submit</button>
                     </form>
                </div>

@@ -144,11 +144,12 @@
                .row {
                     flex-wrap: wrap;
                     @extend %flex-start;
+                    align-items: flex-end;
 
                     label {
                          width: 100%;
-                         color: $color-white;
                          margin-bottom: 20px;
+                         color: $color-white;
 
                          @media (min-width: 800px) {
                               max-width: 330px;
@@ -162,10 +163,11 @@
 
                          input, select {
                               width: 100%;
+                              color: $color-primary;
                               padding: 5px;
-                              border: none;
                               display: block;
                               border-radius: 3px;
+                              border: 2px solid $color-white;
 
 
                               @media (min-width: 800px) {
@@ -185,6 +187,7 @@
                     font-weight: 500;
                     letter-spacing: 2px;
                     color: $color-white;
+                    text-transform: uppercase;
                     background: $color-primary;
                     border: 2px solid $color-primary;
                }
