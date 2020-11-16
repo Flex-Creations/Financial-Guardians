@@ -1,8 +1,8 @@
 // // // // // // // // // // // // // // // // // // // // // //
-const workNumber = document.querySelector('.work-number');
-const staffNumber = document.querySelector('.staff-number');
-const clientsNumber = document.querySelector('.clients-number');
-const removalsNumber = document.querySelector('.removals-number');
+// const workNumber = document.querySelector('.work-number');
+// const staffNumber = document.querySelector('.staff-number');
+// const clientsNumber = document.querySelector('.clients-number');
+// const removalsNumber = document.querySelector('.removals-number');
 
 
 
@@ -11,7 +11,7 @@ const removalsNumber = document.querySelector('.removals-number');
 
 // // // // // // // // // // // // // // // // // // // // // //
 document.addEventListener("DOMContentLoaded", () => {
-     setTimeout(count, 1000);
+     // setTimeout(count, 1000);
 });
 
 
@@ -38,11 +38,11 @@ function counter(element, start, end, duration) {
      }, step);
 }
 
-function count() {
-     counter(workNumber, 0, 18, 3000);
-     counter(staffNumber, 0, 9, 2500);
-     counter(clientsNumber, 0, 35, 3000);
-     counter(removalsNumber, 0, 33, 3000);
-}
+// function count() {
+//      counter(workNumber, 0, 18, 3000);
+//      counter(staffNumber, 0, 9, 2500);
+//      counter(clientsNumber, 0, 35, 3000);
+//      counter(removalsNumber, 0, 33, 3000);
+// }
 
 

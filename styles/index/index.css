@@ -646,7 +646,7 @@ body a {
 }
 
 .hero-section .header .logo-and-menu-container .logo-container {
-  width: 180px;
+  width: 200px;
   overflow: hidden;
 }
 
@@ -780,6 +780,18 @@ body a {
   }
 }
 
+@media (min-width: 800px) {
+  .hero-section .hero-content .cta-container .hero-cta .cta h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero-section .hero-content .cta-container .hero-cta .cta p {
+    font-size: 25px;
+  }
+}
+
 .hero-section .hero-content .cta-container .hero-cta .cta a button {
   border: none;
   margin-top: 20px;
@@ -819,13 +831,34 @@ body a {
   font-weight: 500;
 }
 
-.services-section {
-  margin-top: 100px;
+.services-section .alt-about {
+  padding: 100px 0;
+  color: #ffffff;
+  background: linear-gradient(135deg, #F68E1E, #EC2025);
+}
+
+.services-section .alt-about h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-transform: capitalize;
+  border-bottom: 3px solid #ffffff;
+}
+
+.services-section .alt-about h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.services-section .alt-about p {
+  margin-bottom: 50px;
 }
 
 .services-section .services-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 100px;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
   -webkit-box-orient: vertical;

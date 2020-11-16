@@ -123,7 +123,7 @@
                background: $color-white;
      
                .logo-container {
-                    width: 180px;
+                    width: 200px;
                     overflow: hidden;
                     @extend %space-between;
      
@@ -232,16 +232,26 @@
                          width: 100%;
                          height: 320px;
                          max-width: 500px;
-
+                         
                          @media (min-width: 800px) {
                               padding-top: 0;
                          }
-
+                         
                          h1 {
                               margin-bottom: 20px;
 
                               @media (min-width: 600px) {
-                                   font-size: 50px
+                                   font-size: 50px;
+                              }
+
+                              @media (min-width: 800px) {
+                                   font-size: 60px;
+                              }
+                         }
+
+                         p {
+                              @media (min-width: 800px) {
+                                   font-size: 25px;
                               }
                          }
 
@@ -291,10 +301,33 @@
 }
 
 .services-section {
-     margin-top: 100px;
+     .alt-about {
+          padding: 100px 0;
+          color: $color-white;
+          background: linear-gradient(135deg, $color-primary, $color-secondary);
+     
+          h2 {
+               font-size: 40px;
+               margin-bottom: 30px;
+               display: inline-block;
+               text-transform: capitalize;
+               border-bottom: 3px solid $color-white;
+          }
 
+          h4 {
+               font-size: 30px;
+               margin-bottom: 10px;
+               text-transform: capitalize;
+          }
+     
+          p {
+               margin-bottom: 50px;
+          }
+     }
+     
      .services-container {
           flex-wrap: wrap;
+          margin-top: 100px;
           animation-delay: 1.5s;
           flex-direction: column;
           @extend %space-between;

@@ -521,18 +521,25 @@ body a {
   margin-top: 40px;
 }
 
-.about-section .why-us, .about-section .our-aim, .about-section .our-vision {
+.about-section .financial-guardians, .about-section .why-us, .about-section .our-aim, .about-section .our-vision {
   margin-top: 50px;
 }
 
-.about-section .why-us h4, .about-section .our-aim h4, .about-section .our-vision h4 {
+.about-section .financial-guardians h4, .about-section .why-us h4, .about-section .our-aim h4, .about-section .our-vision h4 {
   font-size: 40px;
   margin-bottom: 10px;
   color: #F68E1E;
   text-transform: capitalize;
 }
 
-.about-section .why-us p span, .about-section .our-aim p span, .about-section .our-vision p span {
+.about-section .financial-guardians h5, .about-section .why-us h5, .about-section .our-aim h5, .about-section .our-vision h5 {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #F68E1E;
+  text-transform: capitalize;
+}
+
+.about-section .financial-guardians p span, .about-section .why-us p span, .about-section .our-aim p span, .about-section .our-vision p span {
   font-weight: 500;
   color: #F68E1E;
   text-transform: uppercase;
