@@ -492,6 +492,7 @@ body a {
   border-radius: 5px;
   margin-bottom: 20px;
   background: #ffffff;
+  border: 3px solid #F68E1E;
   -webkit-box-shadow: 0 0 10px rgba(26, 26, 26, 0.13);
           box-shadow: 0 0 10px rgba(26, 26, 26, 0.13);
 }
@@ -517,15 +518,17 @@ body a {
 }
 
 .services-section .downloadable-container button {
-  border: none;
   margin-top: 20px;
   padding: 10px 15px;
   border-radius: 5px;
-  background: #F68E1E;
+  background: transparent;
+  border: 2px solid #F68E1E;
 }
 
 .services-section .downloadable-container button a {
-  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #F68E1E;
 }
 
 .contact-section {

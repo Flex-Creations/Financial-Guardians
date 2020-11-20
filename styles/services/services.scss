@@ -57,6 +57,7 @@
                margin-bottom: 20px;
                @extend %transition;
                background: $color-white;
+               border: 3px solid $color-primary;
                box-shadow: 0 0 10px rgba($color-black, .13);
 
                &:hover {
@@ -75,20 +76,21 @@
           }
      }
 
-
      .downloadable-container {
           flex-wrap: wrap;
           @extend %space-between;
 
           button {
-               border: none;
                margin-top: 20px;
                padding: 10px 15px;
                border-radius: 5px;
-               background: $color-primary;
+               background: transparent;
+               border: 2px solid $color-primary;
                
                a {
-                    color: $color-white;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    color: $color-primary;
                }
           }
      }
